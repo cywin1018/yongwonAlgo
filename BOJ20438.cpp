@@ -37,6 +37,6 @@ int main() {
 
     for(int i=0;i<m;i++){
         int st,ed; cin >> st >> ed;
-        cout << stu[ed]-stu[st] ;
+        cout << stu[ed]-stu[st-1] <<'\n';
     }
 }
