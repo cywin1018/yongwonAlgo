@@ -37,5 +37,6 @@ int main() {
         if (bestCal < totalCal / totalCost)
             bestCal = totalCal / totalCost;
     }
+    // plz gitt
     cout << bestCal;
 }
