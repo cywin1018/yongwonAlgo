@@ -16,18 +16,14 @@ int main() {
     for (int i = 0; i < n; i++)
         cin >> A[i];
     sort(A, A + n);
-    int l = 0, r = 1, ans = 1000000000;
+    int l = 0, r = 0, ans = 2e9;
     while (l < n) {
-        if (A[r] - A[l] < m) {
-            r++;
+        int diff = A[r] - A[l];
 
-        }
-        if (A[r] -A[l]==m) {
-            cout << m;
-            return 0;
-        }
-        ans = min(ans, A[r] - A[l]);
-        l++;
+        if (diff >= m)
+            ans = min(ans, diff);
+        if (r > n || diff > m)l++;
+        else r++;
     }
     cout << ans;
 }
