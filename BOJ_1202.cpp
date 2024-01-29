@@ -36,9 +36,8 @@ int main() {
             idx++;
         }
 
-        // cout << pq.top() << " ";
+
         if (!pq.empty()) {
-            // cout << pq.top() << " ";
             ans += pq.top();
             pq.pop();
         }
